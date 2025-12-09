@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mirrordna-glyph"
+version = "0.1.0"
+description = "LingOS Kernel: Sovereign Glyph Packet Protocol"
+authors = [{name = "Paul Desai", email = "paul@mirrordna.org"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "cbor2>=5.4.0",
+    "pynacl>=1.5.0"
+]
+keywords = ["lingos", "sovereignty", "protocol", "cbor", "crypto"]
+
+[key-features]
+algorithm = "Ed25519"
+serialization = "CBOR"
